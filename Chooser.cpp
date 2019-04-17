@@ -1,6 +1,4 @@
 #include "Chooser.hpp"
+using namespace std;
 
 
-string bullpgia::Chooser::choose(uint length)  {
-    return NULL;
-}

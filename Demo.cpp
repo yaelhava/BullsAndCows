@@ -11,6 +11,7 @@ using namespace std;
 
 #include "play.hpp"
 #include "DummyChoosers.hpp"
+
 #include "DummyGuessers.hpp"
 #include "SmartGuesser.hpp"
 using namespace bullpgia;
@@ -22,8 +23,6 @@ int main() {
 	cout << play(c1234, g9999, 4, 100) << endl;  // prints 101 - guesser loses by running out of turns 
 	cout << play(c1234, g12345, 4, 100) << endl;  // prints 101 - guesser loses technically by making an illegal guess (too long).
 	cout << play(c12345, g1234, 4, 100) << endl;  // prints 0 - chooser loses technically by choosing an illegal number (too long).
-
-
 
 	RandomChooser randy;
 	RandomGuesser guessy;
