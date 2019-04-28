@@ -33,7 +33,6 @@ int main() {
 		testcase.setname("Calculate bull and pgia")
 		.CHECK_OUTPUT(calculateBullAndPgia("1234","1234"), "4,0")      // 4 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("1234","4321"), "0,4")      // 0 bull, 4 pgia
-
 		.CHECK_OUTPUT(calculateBullAndPgia("2610","2610"), "4,0")      // 4 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("2610","1234"), "0,2")      // 0 bull, 2 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("0406","0406"), "4,0")      // 4 bull, 0 pgia
@@ -42,7 +41,6 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("1212","1234"), "2,0")      // 2 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("8777","8778"), "3,0")      // 3 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("8777","7778"), "2,2")      // 2 bull, 2 pgia
-
 		.CHECK_OUTPUT(calculateBullAndPgia("12345","12345"), "5,0")      	// 5 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("12234","12324"), "4,0")      	// 3 bull, 2 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("4444","1234"), "1,0")      		// 1 bull, 0 pgia
@@ -51,7 +49,6 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("433434","434343"), "2,4")     // 2 bull, 4 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("12345678","87655678"), "4,0") // 4 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("2610","0406"), "0,2")      		// 0 bull, 2 pgia
-
 		;
 
 		testcase.setname("Play with dummy choosers and guessers")
