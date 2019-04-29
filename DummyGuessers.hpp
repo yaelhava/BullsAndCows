@@ -16,7 +16,6 @@ public:
 		return myConstantString;
 	}
 
-	void startNewGame(uint length) override;
 };
 
 /**
@@ -25,6 +24,4 @@ public:
 class RandomGuesser : public bullpgia::Guesser
 {
 	string guess() override;
-
-	void startNewGame(uint length) override;
 };

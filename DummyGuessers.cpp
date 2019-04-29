@@ -11,11 +11,3 @@ std::string RandomGuesser::guess() {
 }
 
 
- void ConstantGuesser::startNewGame(uint length){
-	 this -> length = length;
- }
-
-
-void RandomGuesser::startNewGame(uint length){
-	 this -> length = length;
-}
