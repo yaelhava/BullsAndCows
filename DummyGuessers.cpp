@@ -10,16 +10,12 @@ std::string RandomGuesser::guess() {
 	return r;
 }
 
- void ConstantGuesser::learn(string s){
 
- }
  void ConstantGuesser::startNewGame(uint length){
-
+	 this -> length = length;
  }
 
-void RandomGuesser::learn(string s) {
-	
-}
-void RandomGuesser::startNewGame(uint length){
 
+void RandomGuesser::startNewGame(uint length){
+	 this -> length = length;
 }
