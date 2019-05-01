@@ -42,7 +42,7 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("8777","8778"), "3,0")      // 3 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("8777","7778"), "2,2")      // 2 bull, 2 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("12345","12345"), "5,0")      	// 5 bull, 0 pgia
-		.CHECK_OUTPUT(calculateBullAndPgia("12234","12324"), "4,0")      	// 3 bull, 2 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("12234","12324"), "3,2")      	// 3 bull, 2 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("4444","1234"), "1,0")      		// 1 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("0000","1234"), "0,0")      		// 0 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("433434","123456"), "2,0")     // 2 bull, 0 pgia
@@ -78,7 +78,7 @@ int main() {
 
 		.CHECK_EQUAL(play(c9999, g9999, 5, 100), 0)      // chooser loses technically by choosing an illegal number (too short).
 		.CHECK_EQUAL(play(c9999, g12345, 5, 100), 0)     // chooser loses technically by choosing an illegal number (too short).
-		.CHECK_EQUAL(play(c12345, g9999, 5, 100), 0)     // guesser loses technically by making an illegal guess (too short).
+		.CHECK_EQUAL(play(c12345, g9999, 5, 100), 101)     // guesser loses technically by making an illegal guess (too short).
 		.CHECK_EQUAL(play(c12345, g98765, 4, 100), 0)    // chooser loses technically by choosing an illegal number (too long).
 		.CHECK_EQUAL(play(c1234, g2610, 4, 90), 91)    	 // guesser loses by running out of turns
 		.CHECK_EQUAL(play(c0406, g9999, 4, 10), 11)    	 // guesser loses by running out of turns
