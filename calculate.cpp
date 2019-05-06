@@ -1,8 +1,5 @@
 #include "calculate.hpp"
 
-/////////////////////////////////
-#include <iostream>
-
 using std::string;
 
 string bullpgia::calculateBullAndPgia(string choice, string guess)
@@ -18,7 +15,7 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
 
     for (int i = 0; i < length; i++)
     {
-        if (choice.at(i) == guess.at(i))
+        if (choice[i] == guess[i])
         {
             bullArr[i] = true;
             pgiaArr[i] = true;
@@ -35,7 +32,7 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
         {
             if (!pgiaArr[j])
             {
-                if (choice.at(i) == guess.at(j))
+                if (choice[i] == guess[j])
                 {
                     pgiaArr[j] = true;
                     pgiaCounter++;
@@ -48,9 +45,3 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
     return "" + to_string(bullCounter) + ',' + to_string(pgiaCounter);
 }
 
-// int main()
-// {
-//     cout << bullpgia::calculateBullAndPgia("1234", "4321") << endl;
-
-//     return 0;
-// }
