@@ -1,2 +1,2 @@
 # BullsAndCows
-מגישות: יעל חווה ונעמה הרטוב
+made by: Yael Hava and Naama Hartuv
