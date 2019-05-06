@@ -2,15 +2,18 @@
 using std::string;
 using namespace bullpgia;
 
-string SmartGuesser::guess()
-{
 
+
+                                    //pick the first string from the list
+string SmartGuesser::guess()        
+{
     currGuess = list.front();
 
     return currGuess;
 }
-
-void SmartGuesser::learn(string s)
+                                    //compare the bull and pgia of the current string to the
+                                    // bull and pgia of the strings in the list
+void SmartGuesser::learn(string s)      
 {
 
     for (auto itr = list.begin(); itr != list.end(); itr++)
@@ -21,7 +24,7 @@ void SmartGuesser::learn(string s)
         }
     }
 }
-
+                                                //build the list by the length
 void SmartGuesser::startNewGame(uint length)
 {
     this->length = length;
@@ -34,7 +37,7 @@ void SmartGuesser::startNewGame(uint length)
     switch (length)
     {
 
-    case 1:
+    case 1:                                         //length = 1
         for (int i = 0; i < 10; i++)
         {
             list.push_back(to_string(i));
@@ -42,7 +45,7 @@ void SmartGuesser::startNewGame(uint length)
 
         break;
 
-    case 2:
+    case 2:                                         //length = 2
         for (int i = 0; i < 100; i++)
         {
             if (i < 10)
@@ -55,7 +58,7 @@ void SmartGuesser::startNewGame(uint length)
             }
         }
         break;
-    case 3:
+    case 3:                                         //length = 3
         for (int i = 0; i < 1000; i++)
         {
             if (i < 10)
@@ -72,7 +75,7 @@ void SmartGuesser::startNewGame(uint length)
             }
         }
         break;
-    case 4:
+    case 4:                                         //length = 4
         for (int i = 0; i < 10000; i++)
         {
             if (i < 10)
